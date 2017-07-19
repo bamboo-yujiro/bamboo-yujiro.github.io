@@ -5,7 +5,9 @@ It is micro, so, there are valious way to make constitusion.
 I want to show a sample way with such as MVC pattern bellow.
 
 Demo : http://172.104.82.128/
+
 Github : https://github.com/bamboo-yujiro/flask-mvc-sample
+
 
 ## Constitution
 
