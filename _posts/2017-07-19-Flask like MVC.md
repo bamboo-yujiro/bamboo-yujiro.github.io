@@ -141,7 +141,7 @@ class Memo(ModelBase):
 
 http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html#one-to-many
 
-But I did'nt want to use "Foreignkey" because of making foreign key constraint on database , so, I implemented with next way.
+But I did'nt want to use "Foreignkey" because foreign key constraint on database was made automatically, so, I implemented with next way.
 
 It's way is using "primaryjoin" and "secondaryjoin" attribute.
 
@@ -172,4 +172,8 @@ memo_tags = db.relationship('MemoTag', backref='memo', lazy='dynamic', cascade="
 user_password = db.relationship('UserPasword', primaryjoin="User.id==UserPassword.user_id", foreign_keys='UserPassword.user_id', uselist=False) # one to one
 ```
 ※ This example isn't related with this sample app.
+
+## Controller
+
+comming soon...
 
